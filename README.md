@@ -10,9 +10,9 @@
 
 EmuLinker-K (ELK) is a server that uses the Kaillera protocol to facilitate online multiplayer for emulators.
 
-EmuLinker-K is a Kotlin rewrite of [EmulinkerSF](https://github.com/God-Weapon/EmuLinkerSF), with an emphasis on measuring and improving performance, patching security and privacy vulnerabilities, and adding useful features for both server owners and users.  EmuLinker-K is maintained by [nue](https://twitter.com/6kRt62r2zvKp5Rh).
+EmuLinker-K is a Kotlin rewrite of [EmuLinkerSF](https://github.com/God-Weapon/EmuLinkerSF), with an emphasis on measuring and improving performance, patching security and privacy vulnerabilities, and adding useful features for both server owners and users. EmuLinker-K is maintained by [nue](https://twitter.com/6kRt62r2zvKp5Rh).
 
-Please help us translate the server into more languages by contributing to our [CrowdIn project](https://crowdin.com/project/emulinker-k)
+Please help us translate the server into more languages by contributing to our [CrowdIn project](https://crowdin.com/project/emulinker-k).
 
 Feel free to file bugs and feature requests on this repository, or find our channel in the Kaillera Reborn discord:
 
@@ -20,7 +20,7 @@ Feel free to file bugs and feature requests on this repository, or find our chan
 
 ## Setting up a new server
 
-Download the latest version from the [Releases](https://github.com/hopskipnfall/EmuLinker-K/releases/latest) page. After unzipping, make sure Java 17 or above is installed before run the following commands:
+Download the latest version from the [Releases](https://github.com/hopskipnfall/EmuLinker-K/releases/latest) page. After unzipping, make sure Java 17 or above is installed before running the following commands:
 
 1. Allow scripts to be executed:
 
@@ -31,7 +31,7 @@ chmod +x *.sh
 2. Run the server:
 
 ```bash
-./start_server.sh
+./start-server.sh
 ```
 
 The server should now be running on port `27888`.
@@ -48,7 +48,7 @@ You can have the server make a Twitter post when a user opens a game, and either
 
 ![image](https://user-images.githubusercontent.com/5498859/142763676-eaa6afdb-d521-4860-966d-a5c02246b561.png)
 
-To set it up, configure the following values in `config/emulinker.cfg`:
+To set it up, configure the following values in `conf/emulinker.cfg`:
 
 ```
 # Twitter reporting integration switch. When enabled it will
@@ -72,7 +72,7 @@ twitter.auth.oAuthConsumerKey=
 twitter.auth.oAuthConsumerSecret=
 ```
 
-You will also need to configure some messages in `config/language.properties`:
+You will also need to configure some messages in `conf/language.properties`:
 
 ```
 KailleraServerImpl.TweetPendingAnnouncement=Posting a tweet in {0} seconds. Type \"/stop\" to disable.

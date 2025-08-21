@@ -6,6 +6,7 @@ on:
 
 jobs:
   synchronize-with-crowdin:
+    name: Synchronize with Crowdin
     runs-on: ubuntu-latest
 
     steps:
